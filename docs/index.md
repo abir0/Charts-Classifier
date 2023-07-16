@@ -3,35 +3,36 @@ title: Home
 layout: page
 ---
 
-# Image Recognizer 
-The model can classify 28 different types of charts and diagrams <br/>
+# Image Classifier for Charts and Diagrams 
+The model can classify 28 different types of charts and diagrams with ~85% accuracy. <br/>
+
 The types are following: <br/>
 
 1. arc diagram
-1. area chart
-1. bar chart
-1. block diagram
-1. boxplot
-1. bubble chart
-1. cartogram
-1. control chart
-1. dendrogram
-1. flowchart
-1. funnel chart
-1. gantt chart
-1. heatmap
-1. histogram
-1. line graph
-1. matrix diagram
-1. mind map
-1. network graph
-1. neural network diagram
-1. organogram
-1. phase diagram
-1. pie chart
-1. radar chart
-1. scatter plot
-1. snakey chart
-1. surface plot
-1. timeline chart
-1. venn diagram
+2. area chart
+3. bar chart
+4. block diagram
+5. boxplot
+6. bubble chart
+7. cartogram
+8. control chart
+9. dendrogram
+10. flowchart
+11. funnel chart
+12. gantt chart
+13. heatmap
+14. histogram
+15. line graph
+16. matrix diagram
+17. mind map
+18. network graph
+19. neural network diagram
+20. organogram
+21. phase diagram
+22. pie chart
+23. radar chart
+24. scatter plot
+25. snakey chart
+26. surface plot
+27. timeline chart
+28. venn diagram
