@@ -3,7 +3,7 @@ title: Home
 layout: page
 ---
 
-# Image Classifier for Charts and Diagrams 
+# Image Classifier
 The model can classify 28 different types of charts and diagrams with ~85% accuracy. <br/>
 
 The types are following: <br/>
