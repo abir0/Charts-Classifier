@@ -1,4 +1,5 @@
 # Charts-Classifier
+
 An image classification model from data collection, cleaning, model training, deployment and API integration. <br/>
 
 <p align="center">
@@ -60,25 +61,28 @@ The types are following: <br/>
 ## Dataset Preparation
 
 **Data Collection:** Downloaded from DuckDuckGo using term name <br/>
+
 **DataLoader:** Used fastai DataBlock API to set up the DataLoader. <br/>
+
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
 
-Details can be found in `notebooks/data_collection_and_augmentation.ipynb`
+> Details can be found in `notebooks/data_collection_and_augmentation.ipynb`
 
 
 ## Training and Data Cleaning
 
 **Training:** Fine-tuned a resnet34 model for 6 epochs (2 times) and got upto ~85% accuracy. <br/>
+
 **Data Cleaning:** Since the data was collected from DuckDuckGo search engine API, there were many noises and inconsistencies within the dataset. Hence, the data was cleaned and updated using the fastai ImageClassifierCleaner. The data was cleaned each time after training or finetuning until the final iteration of the model. <br/>
 
-Details can be found in `notebooks/model_training_and_cleaning.ipynb`
+> Details can be found in `notebooks/model_training_and_cleaning.ipynb`
 
 
 ## Model Inference
 
 The model was exported as a `.pkl` file and was used for inference.
 
-Details can be found in `notebooks/model_inference.ipynb`
+> Details can be found in `notebooks/model_inference.ipynb`
 
 
 ## Model Deployment
