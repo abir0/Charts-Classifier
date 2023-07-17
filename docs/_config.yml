@@ -1,6 +1,6 @@
-theme: just-the-docs
+theme: just-the-docs/just-the-docs@main
 plugins:
-  - jekyll-github-metadata
+  - jekyll-remote-theme
 
 title: Charts Classifier
 description: An image classification API that can classify 28 different types of charts and diagrams
