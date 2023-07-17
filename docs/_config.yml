@@ -1,4 +1,4 @@
-theme: just-the-docs/just-the-docs@main
+remote_theme: just-the-docs/just-the-docs@main
 plugins:
   - jekyll-remote-theme
 
