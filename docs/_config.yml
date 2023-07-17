@@ -1,9 +1,9 @@
-remote_theme: daviddarnes/alembic@main
+theme: just-the-docs
 plugins:
-- jekyll-remote-theme
+  - jekyll-github-metadata
 
 title: Charts Classifier
-description: An image classification API that classifies 28 different types of charts and diagrams
+description: An image classification API that can classify 28 different types of charts and diagrams
 
 author:
   name: Abir Hassan
