@@ -1,6 +1,8 @@
 ---
 title: Models
 layout: page
+parent: Downloads
+nav_order: 3
 ---
 
 Get trained and exported models [here](https://drive.google.com/drive/folders/1yItjmRPO0FGVePJCuGTF8ZUWRXpdNWx9?usp=sharing).  <br/>
