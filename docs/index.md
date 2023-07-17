@@ -8,8 +8,8 @@ layout: home
 <p>An image classification model from data collection, cleaning, model training, deployment and API integration.</p>
 
 <p>
-    <a href="https://huggingface.co/spaces/abir0/charts-classifier" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Use it on HuggingFace</a>
-    <a href="https://github.com/abir0/Charts-Classifier" class="btn fs-5 mb-4 mb-md-0">View it on GitHub</a>
+    <a href="https://huggingface.co/spaces/abir0/charts-classifier" target="_blank" class="btn btn-primary fs-5 mb-4 mb-md-0 mr-2">Use it on Hugging Face</a>
+    <a href="https://github.com/abir0/Charts-Classifier" target="_blank" class="btn fs-5 mb-4 mb-md-0">View it on GitHub</a>
 </p>
 
 <hr>

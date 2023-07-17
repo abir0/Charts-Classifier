@@ -3,7 +3,7 @@
 An image classification model from data collection, cleaning, model training, deployment and API integration. <br/>
 
 <p align="center">
-    <a href="https://huggingface.co/spaces/abir0/charts-classifier">
+    <a href="https://huggingface.co/spaces/abir0/charts-classifier" target="_blank">
         <img src = "images/app_screenshot.png" width="800">
     </a>
 </p>
