@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+permalink: /home/
 ---
 
 # Image Classifier
