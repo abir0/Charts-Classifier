@@ -7,3 +7,19 @@ description: An image classification API that can classify 28 different types of
 
 author:
   name: Abir Hassan
+
+heading_anchors: true
+
+enable_copy_code_button: true
+
+nav_external_links:
+  - title: Charts Classifier on GitHub
+    url: https://github.com/abir0/Charts-Classifier
+
+color_scheme: dark
+
+back_to_top: true
+back_to_top_text: "Back to top"
+
+footer_content: "Copyright &copy; 2023 Abir Hassan. Distributed by an <a href=\"https://github.com/abir0/Charts-Classifier/tree/main/LICENSE.txt\">MIT license.</a>"
+
