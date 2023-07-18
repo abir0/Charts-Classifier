@@ -15,6 +15,8 @@ nav_order: 1
 
 <hr>
 
+{: .warning }
+> This website documents the features of the current `main`</code>` branch of the Charts Classifier repo. This is still in the development phase.
 
 ## Model Overview
 
@@ -60,6 +62,7 @@ The types are following: <br/>
 
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
 
+{: .note }
 > Details can be found in `notebooks/data_collection_and_augmentation.ipynb` of the GitHub repo.
 
 
@@ -69,6 +72,7 @@ The types are following: <br/>
 
 **Data Cleaning:** Since the data was collected from DuckDuckGo search engine API, there were many noises and inconsistencies within the dataset. Hence, the data was cleaned and updated using the fastai ImageClassifierCleaner. The data was cleaned each time after training or fine-tuning until the final iteration of the model. <br/>
 
+{: .note }
 > Details can be found in `notebooks/model_training_and_cleaning.ipynb` of the GitHub repo.
 
 
@@ -76,6 +80,7 @@ The types are following: <br/>
 
 The model was exported as a `.pkl` file and was used for inference.
 
+{: .note }
 > Details can be found in `notebooks/model_inference.ipynb` of the GitHub repo.
 
 
@@ -87,3 +92,8 @@ The model was deployed to Hugging Face Spaces as a gradio app. The implementatio
 ## API integration with GitHub Pages
 
 The deployed model API is integrated [here](https://abir0.github.io/Charts-Classifier/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
+
+
+<hr>
+
+<p><button class="btn js-toggle-dark-mode">Preview dark color scheme</button></p>

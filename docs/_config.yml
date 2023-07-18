@@ -16,7 +16,16 @@ nav_external_links:
   - title: Charts Classifier on GitHub
     url: https://github.com/abir0/Charts-Classifier
 
-color_scheme: dark
+color_scheme: nil
+
+callouts_level: quiet
+callouts:
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
 
 back_to_top: true
 back_to_top_text: "Back to top"
