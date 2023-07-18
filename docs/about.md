@@ -11,4 +11,4 @@ This project was done as a part of MasterCourse Data Science Cohort 2 Capstone P
 
 ## License
 
-Distributed by an <a href=\"https://github.com/abir0/Charts-Classifier/tree/main/LICENSE.txt\">MIT license.</a>
+Distributed by an <a href="https://github.com/abir0/Charts-Classifier/tree/main/LICENSE.txt">MIT license.</a>

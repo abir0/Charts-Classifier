@@ -8,6 +8,8 @@ description: An image classification API that can classify 28 different types of
 author:
   name: Abir Hassan
 
+favicon_ico: "/images/favicon.ico"
+
 heading_anchors: true
 
 enable_copy_code_button: true

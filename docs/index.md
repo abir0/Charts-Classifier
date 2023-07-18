@@ -92,8 +92,3 @@ The model was deployed to Hugging Face Spaces as a gradio app. The implementatio
 ## API integration with GitHub Pages
 
 The deployed model API is integrated [here](https://abir0.github.io/Charts-Classifier/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
-
-
-<hr>
-
-<p><button class="btn js-toggle-dark-mode">Preview dark color scheme</button></p>
