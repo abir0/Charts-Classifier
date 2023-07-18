@@ -3,9 +3,9 @@
 An image classification model from data collection, cleaning, model training, deployment and API integration. <br/>
 
 <p align="center">
-    <a href="https://huggingface.co/spaces/abir0/charts-classifier" target="_blank">
-        <img src = "images/app_screenshot.png" width="800">
-    </a>
+  <a href="https://huggingface.co/spaces/abir0/charts-classifier" target="_blank">
+    <img src = "images/app_dark.png" width="800">
+  </a>
 </p>
 
 
@@ -25,7 +25,7 @@ An image classification model from data collection, cleaning, model training, de
 
 ## Model Overview
 
-The model can classify 28 different types of charts and diagrams <br/>
+The model can classify 28 different types of charts and diagrams in raster image formats (png, jpg, gif, etc.). <br/>
 
 The types are following: <br/>
 
@@ -58,38 +58,63 @@ The types are following: <br/>
 27. timeline chart
 28. venn diagram
 
+
 ## Dataset Preparation
 
-**Data Collection:** Downloaded from DuckDuckGo using term name <br/>
+**Data Collection:** The image dataset was downloaded from DuckDuckGo search engine API using keywords (28 class names). <br/>
 
-**DataLoader:** Used fastai DataBlock API to set up the DataLoader. <br/>
+**DataLoaders:** fastai DataBlock API was used to set up the DataLoaders. <br/>
 
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
 
-> Details can be found in `notebooks/data_collection_and_augmentation.ipynb`
+> Details can be found in `notebooks/data_collection_and_augmentation.ipynb` of the GitHub repo.
+
+<p align="center">
+  <img src = "images/train_dataset.png" width="700"><br/>
+  <i>Example images from the training dataset</i> <br/>
+</p>
+
+<p align="center">
+  <img src = "images/valid_dataset.png" width="700"><br/>
+  <i>Example images from the validation dataset</i> <br/>
+</p>
 
 
 ## Training and Data Cleaning
 
-**Training:** Fine-tuned a resnet34 model for 6 epochs (2 times) and got upto ~85% accuracy. <br/>
+**Training:** Training was done on a pre-trained model (`resnet34`) and it was fine-tuned for 6 epochs with accuracy upto ~85% . <br/>
 
-**Data Cleaning:** Since the data was collected from DuckDuckGo search engine API, there were many noises and inconsistencies within the dataset. Hence, the data was cleaned and updated using the fastai ImageClassifierCleaner. The data was cleaned each time after training or finetuning until the final iteration of the model. <br/>
+**Data Cleaning:** Since the data was collected from DuckDuckGo search engine API, there were many noises and inconsistencies within the dataset. Hence, the data was cleaned and updated using the fastai ImageClassifierCleaner. The data was cleaned each time after training or fine-tuning until the final iteration of the model. <br/>
 
-> Details can be found in `notebooks/model_training_and_cleaning.ipynb`
+> Details can be found in `notebooks/model_training_and_cleaning.ipynb` of the GitHub repo.
 
 
 ## Model Inference
 
 The model was exported as a `.pkl` file and was used for inference.
 
-> Details can be found in `notebooks/model_inference.ipynb`
+> Details can be found in `notebooks/model_inference.ipynb` of the GitHub repo.
 
 
 ## Model Deployment
 
-The model was deployed to HuggingFace Spaces as a Gradio App. The implementation can be found [here](https://huggingface.co/spaces/abir0/charts-classifier). <br/>
+The model was deployed to Hugging Face Spaces as a gradio app. The implementation can be found [here](https://huggingface.co/spaces/abir0/charts-classifier). <br/>
+
+<p align="center">
+  <a href="https://huggingface.co/spaces/abir0/charts-classifier" target="_blank">
+    <img src = "images/app_light.png" width="800">
+  </a><br/>
+  <i>Model deployed in Hugging Face Spaces</i><br/>
+</p>
 
 
 ## API integration with GitHub Pages
 
 The deployed model API is integrated [here](https://abir0.github.io/Charts-Classifier/) in GitHub Pages Website. Implementation and other details can be found in `docs` folder.
+
+<p align="center">
+  <a href="https://abir0.github.io/Charts-Classifier/" target="_blank">
+    <img src = "images/github_pages.png" width="800">
+  </a><br/>
+  <i>Documentation in GitHub Pages</i><br/>
+</p>

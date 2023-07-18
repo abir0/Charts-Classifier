@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: home
+nav_order: 1
 ---
 
 # Image Classifier
@@ -17,7 +18,7 @@ layout: home
 
 ## Model Overview
 
-The model can classify 28 different types of charts and diagrams <br/>
+The model can classify 28 different types of charts and diagrams in raster image formats (png, jpg, gif, etc.). <br/>
 
 The types are following: <br/>
 
@@ -53,34 +54,34 @@ The types are following: <br/>
 
 ## Dataset Preparation
 
-**Data Collection:** Downloaded from DuckDuckGo using term name <br/>
+**Data Collection:** The image dataset was downloaded from DuckDuckGo search engine API using keywords (28 class names). <br/>
 
-**DataLoader:** Used fastai DataBlock API to set up the DataLoader. <br/>
+**DataLoaders:** fastai DataBlock API was used to set up the DataLoaders. <br/>
 
 **Data Augmentation:** fastai provides default data augmentation which operates in GPU. <br/>
 
-> Details can be found in `notebooks/data_collection_and_augmentation.ipynb`
+> Details can be found in `notebooks/data_collection_and_augmentation.ipynb` of the GitHub repo.
 
 
 ## Training and Data Cleaning
 
-**Training:** Fine-tuned a resnet34 model for 6 epochs (2 times) and got upto ~85% accuracy. <br/>
+**Training:** Training was done on a pre-trained model (`resnet34`) and it was fine-tuned for 6 epochs with accuracy upto ~85% . <br/>
 
-**Data Cleaning:** Since the data was collected from DuckDuckGo search engine API, there were many noises and inconsistencies within the dataset. Hence, the data was cleaned and updated using the fastai ImageClassifierCleaner. The data was cleaned each time after training or finetuning until the final iteration of the model. <br/>
+**Data Cleaning:** Since the data was collected from DuckDuckGo search engine API, there were many noises and inconsistencies within the dataset. Hence, the data was cleaned and updated using the fastai ImageClassifierCleaner. The data was cleaned each time after training or fine-tuning until the final iteration of the model. <br/>
 
-> Details can be found in `notebooks/model_training_and_cleaning.ipynb`
+> Details can be found in `notebooks/model_training_and_cleaning.ipynb` of the GitHub repo.
 
 
 ## Model Inference
 
 The model was exported as a `.pkl` file and was used for inference.
 
-> Details can be found in `notebooks/model_inference.ipynb`
+> Details can be found in `notebooks/model_inference.ipynb` of the GitHub repo.
 
 
 ## Model Deployment
 
-The model was deployed to HuggingFace Spaces as a Gradio App. The implementation can be found [here](https://huggingface.co/spaces/abir0/charts-classifier). <br/>
+The model was deployed to Hugging Face Spaces as a gradio app. The implementation can be found [here](https://huggingface.co/spaces/abir0/charts-classifier). <br/>
 
 
 ## API integration with GitHub Pages
