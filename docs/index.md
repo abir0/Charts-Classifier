@@ -16,7 +16,7 @@ nav_order: 1
 <hr>
 
 {: .warning }
-> This website documents the features of the current `main`</code>` branch of the Charts Classifier repo. This is still in the development phase.
+> This website documents the features of the current `main` branch of the Charts Classifier repo. This is still in the development phase.
 
 ## Model Overview
 
